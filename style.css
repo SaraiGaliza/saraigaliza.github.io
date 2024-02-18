@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFF;
+    background-color: rgba(232, 232, 237, 0.4);
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -17,9 +17,9 @@ body {
 }
 .header {
     color: #333;
-    padding: 15px 0; /* Increased padding for a more prominent header */
+    padding: 0px 0; /* Increased padding for a more prominent header */
     text-align: center;
-    background-color: #f8f8f8; /* Subtle background for a clean look */
+    background-color: rgba(232, 232, 237, 0.4); /* Subtle background for a clean look */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow for depth */
 }
 h1 {
@@ -29,8 +29,8 @@ h1 {
 .navigation {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    background-color: #f8f8f8;
+    padding: 5px 0;
+    background-color: white;
     border-bottom: 1px solid #d1d1d1;
 }
 .navigation a {
@@ -41,7 +41,7 @@ h1 {
 }
 .main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 .about, .services, #contact {
@@ -83,7 +83,16 @@ h2::after {
 }
 
 .card {
-    background-color: #05FFA1;
-    width: 23.59em;
+    background-color: #161616;
+    margin: 15px;
+    width: 22em;
     height: 29em;
+    border-radius: 18px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
