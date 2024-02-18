@@ -17,11 +17,19 @@ body {
 }
 .header {
     color: #ffffff;
+    background: rgb(0,0,0);
     padding: 0px 0; /* Increased padding for a more prominent header */
     text-align: center;
-    background-color: #1d1d1d;    /* Subtle background for a clean look */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow for depth */
 }
+
+@media (min-width: 800px) {
+    .header{
+        background: rgb(0,0,0);
+        background: linear-gradient(305deg, rgba(0,0,0,1) 70%, rgba(185,103,255,1) 83%, rgba(1,205,254,1) 91%, rgba(0,255,159,1) 97%);
+    }
+}
+  
 h1 {
     margin: 0;
     font-weight: 600;
@@ -45,11 +53,13 @@ h1 {
     margin: auto;
 }
 .about, .services, #contact {
-    background-color: #FFF;
     margin: 20px 0;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 8px;
+}
+.about, #contact {
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .service-offering {
     background-color: #FFF;
