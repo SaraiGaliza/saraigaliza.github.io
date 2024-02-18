@@ -16,10 +16,10 @@ body {
     line-height: 1.6;
 }
 .header {
-    color: #333;
+    color: #ffffff;
     padding: 0px 0; /* Increased padding for a more prominent header */
     text-align: center;
-    background-color: rgba(232, 232, 237, 0.4); /* Subtle background for a clean look */
+    background-color: #1d1d1d;    /* Subtle background for a clean look */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow for depth */
 }
 h1 {
@@ -82,17 +82,27 @@ h2::after {
     border-top: 1px solid #d1d1d1;
 }
 
-.card {
-    background-color: #161616;
+.service-card {
+    background-color: #1d1d1d;
     margin: 15px;
     width: 22em;
     height: 29em;
     border-radius: 18px;
 }
 
-.card-group {
+.service-card-group {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.text-cards {
+    margin-top: 15%;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.text-cards h1 {
+    color: #FFF;
 }
