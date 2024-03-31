@@ -28,7 +28,6 @@ container.appendChild(canvas);
 
 window.onresize = function() {
 w = canvas.width = window.innerWidth;
-h = canvas.height = window.innerHeight;
 };
 
 function getSpeed() {

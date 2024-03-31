@@ -35,6 +35,22 @@ h1 {
     margin: 0;
     font-weight: 800;
 }
+
+button {
+    box-shadow: 8px 8px 0 0 #d2a5ff;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #000;
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: scale3d(1.01,1.01,1.01);
+}
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -48,11 +64,7 @@ h1 {
     margin: 0 15px;
     font-weight: 600;
 }
-.main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
+
 .about, .services, #contact {
     margin: 20px 0;
     padding: 20px;
@@ -62,6 +74,46 @@ h1 {
     background-color: #FFF;
     box-shadow: -8px 9px 10px rgba(0,0,0,0.1);
 }
+
+.home-section-main {
+    background-color: #6bdbff;
+    padding: 3%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section-main-block-left {
+    margin-right: 1%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.home-section-main-block-left h1 {
+    font-size: 2.5rem;
+}
+
+.home-section-main-block-left p {
+    font-size: 1.5rem;
+}
+
+.home-section-main-block-right {
+    margin-left: 1%;
+    width: 600px;
+    height: 400px;
+}
+
+img {
+    max-height: 400px;
+}
+
+.logo-section {
+    background-color: #000;
+    padding: 1%;
+    height: 50px;
+}
+
 .service-offering {
     background-color: #FFF;
     color: #333;
@@ -146,28 +198,4 @@ h1 {
     font-size: 2em;
     margin-left: 4%;
     margin-right: 4%;
-}
-
-
-#wave-container {
-    display: flex;
-    justify-content: center;
-    min-height: 300px;
-    overflow-x: hidden;
-}
-#wave-container canvas {
-    position: absolute;
-    right: 0;
-    left: 0;
-}
-#wave-container h1 {
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;     
-    align-self: center;
-    z-index: 1;
-    color: white;
-    font-size: 3em;
 }
